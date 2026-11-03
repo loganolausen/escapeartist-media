@@ -31,14 +31,16 @@ h1 {
 }
 .product-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, 290px);
+  justify-content: center;
   gap: 22px;
 }
 .product-card {
+  width: 290px;
   min-width: 0;
-  padding: 14px 14px 18px;
+  padding: 20px;
   border: 1px solid #dedede;
-  border-radius: 5px;
+  border-radius: 20px;
   background: #fff;
   display: flex;
   flex-direction: column;
@@ -67,14 +69,16 @@ h1 {
   letter-spacing: .005em;
 }
 .product-button {
-  align-self: flex-start;
+  width: 100%;
+  align-self: stretch;
   margin-top: auto;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   min-height: 39px;
   padding: 0 22px;
-  background: #7dbb39;
+  border-radius: 10px;
+  background: #719372;
   color: #fff;
   text-decoration: none;
   font-family: "Barlow Condensed", Impact, sans-serif;
@@ -83,7 +87,7 @@ h1 {
   letter-spacing: .04em;
   transition: background .18s ease;
 }
-.product-button:hover { background: #659d2b; }
+.product-button:hover { background: #5f7d60; }
 .disclosure {
   margin-top: 12px;
   padding-top: 20px;
@@ -92,19 +96,14 @@ h1 {
   font-size: 13px;
   line-height: 1.5;
 }
-@media (max-width: 800px) {
-  .gear-page { width: min(100% - 36px, 680px); padding-top: 42px; }
-  .product-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
-  .product-image { height: 205px; }
-  .gear-section { margin-bottom: 46px; }
-}
-@media (max-width: 540px) {
-  .gear-page { width: calc(100% - 32px); padding-top: 32px; }
+@media (max-width: 640px) {
+  .gear-page { width: min(100% - 32px, 420px); padding-top: 32px; }
   .page-header { margin-bottom: 40px; }
   h1 { font-size: 42px; }
+  .gear-section { margin-bottom: 46px; }
   .gear-section h2 { font-size: 27px; margin-bottom: 18px; }
-  .product-grid { grid-template-columns: 1fr; gap: 14px; }
-  .product-card { padding: 12px 12px 16px; }
+  .product-grid { grid-template-columns: minmax(0, 290px); gap: 14px; }
+  .product-card { width: 100%; }
   .product-image { height: 245px; }
   .product-card h3 { font-size: 22px; margin: 14px 0 16px; }
 }
