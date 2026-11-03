@@ -22,8 +22,10 @@ h1 {
   letter-spacing: .035em;
 }
 .gear-section { margin: 0 0 58px; }
+.gear-section:last-of-type h2 { width: 290px; }
 .gear-section h2 {
-  margin: 0 0 24px;
+  width: min(100%, 914px);
+  margin: 0 auto 24px;
   font-size: 30px;
   line-height: 1.1;
   font-weight: 600;
@@ -101,7 +103,7 @@ h1 {
   .page-header { margin-bottom: 40px; }
   h1 { font-size: 42px; }
   .gear-section { margin-bottom: 46px; }
-  .gear-section h2 { font-size: 27px; margin-bottom: 18px; }
+  .gear-section h2 { width: min(100%, 290px); font-size: 27px; margin-bottom: 18px; }
   .product-grid { grid-template-columns: minmax(0, 290px); gap: 14px; }
   .product-card { width: 100%; }
   .product-image { height: 245px; }
