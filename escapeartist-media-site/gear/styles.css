@@ -16,16 +16,16 @@ body {
 h1, h2, h3 { font-family: "Barlow Condensed", Impact, sans-serif; }
 h1 {
   margin: 0;
+  text-align: center;
   font-size: 48px;
   line-height: 1;
   font-weight: 600;
   letter-spacing: .035em;
 }
 .gear-section { margin: 0 0 58px; }
-.gear-section:last-of-type h2 { width: 290px; }
 .gear-section h2 {
-  width: min(100%, 914px);
-  margin: 0 auto 24px;
+  width: 100%;
+  margin: 0 0 24px;
   font-size: 30px;
   line-height: 1.1;
   font-weight: 600;
@@ -34,7 +34,7 @@ h1 {
 .product-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, 290px);
-  justify-content: center;
+  justify-content: start;
   gap: 22px;
 }
 .product-card {
@@ -103,8 +103,8 @@ h1 {
   .page-header { margin-bottom: 40px; }
   h1 { font-size: 42px; }
   .gear-section { margin-bottom: 46px; }
-  .gear-section h2 { width: min(100%, 290px); font-size: 27px; margin-bottom: 18px; }
-  .product-grid { grid-template-columns: minmax(0, 290px); gap: 14px; }
+  .gear-section h2 { width: 100%; font-size: 27px; margin-bottom: 18px; }
+  .product-grid { grid-template-columns: minmax(0, 290px); justify-content: start; gap: 14px; }
   .product-card { width: 100%; }
   .product-image { height: 245px; }
   .product-card h3 { font-size: 22px; margin: 14px 0 16px; }
