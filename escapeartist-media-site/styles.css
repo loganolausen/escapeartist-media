@@ -1,0 +1,67 @@
+:root {
+  color-scheme: dark;
+  background: #000;
+  color: #fff;
+  font-family: "Barlow Condensed", "Arial Narrow", Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  background: #000;
+}
+
+body {
+  min-height: 100svh;
+}
+
+.landing {
+  min-height: 100svh;
+  display: grid;
+  place-items: center;
+  padding: 32px 24px;
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+}
+
+.logo {
+  display: block;
+  width: 400px;
+  max-width: min(78vw, 400px);
+  height: auto;
+}
+
+.coming-soon {
+  margin: 27px 0 0;
+  color: #fff;
+  font-family: "Barlow Condensed", "Arial Narrow", Arial, sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 600px) {
+  .logo {
+    max-width: min(78vw, 340px);
+  }
+
+  .coming-soon {
+    margin-top: 22px;
+    font-size: 14px;
+    letter-spacing: 0.2em;
+  }
+}
